@@ -48,7 +48,7 @@ DJANGO_APPS = (
 # Application definition for local applications
 
 LOCAL_APPS = (
-
+    'applications.users',
 )
 
 # Application definition for third part applications
@@ -109,6 +109,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
+# Con esta constante le indicamos a Django que vamos a trabajar bajo otro modelo de usuarios
+AUTH_USER_MODEL = 'users.user'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
